@@ -22,7 +22,7 @@ public class DriverService {
         if (!driver.getPhone().matches("\\d{10}")) {
             throw new InvalidPhoneException("Invalid phone number");
         }
-        if (!driver.getLicenseNumber().matches("[A-Z]{2}\\d{2}[A-Z]{2}\\d{4}")) {
+        if (!driver.getLicenseNumber().matches("[A-Z]{2}\\d{8}")) {
             throw new InvalidLicenseException("Invalid license number");
         }
         return driverRepo.save(driver);
