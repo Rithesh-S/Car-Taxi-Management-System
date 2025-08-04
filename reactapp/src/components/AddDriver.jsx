@@ -90,7 +90,7 @@ function AddDriver() {
         </h2>
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <div>
-            <label style={{
+            <label htmlFor="driverName" style={{
               display: 'block',
               fontSize: '0.875rem',
               fontWeight: '500',
@@ -100,6 +100,7 @@ function AddDriver() {
               Driver Name
             </label>
             <input
+              id="driverName"
               name="driverName"
               value={formData.driverName}
               onChange={handleChange}
@@ -111,14 +112,7 @@ function AddDriver() {
                 borderRadius: '0.375rem',
                 boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
                 outline: 'none',
-                fontSize: '0.875rem',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                ...(errors.driverName ? {} : {
-                  ':focus': {
-                    borderColor: '#6366f1',
-                    boxShadow: '0 0 0 2px rgba(99, 102, 241, 0.2)'
-                  }
-                })
+                fontSize: '0.875rem'
               }}
             />
             {errors.driverName && (
@@ -129,7 +123,7 @@ function AddDriver() {
           </div>
 
           <div>
-            <label style={{
+            <label htmlFor="city" style={{
               display: 'block',
               fontSize: '0.875rem',
               fontWeight: '500',
@@ -139,6 +133,7 @@ function AddDriver() {
               City
             </label>
             <input
+              id="city"
               name="city"
               value={formData.city}
               onChange={handleChange}
@@ -150,14 +145,7 @@ function AddDriver() {
                 borderRadius: '0.375rem',
                 boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
                 outline: 'none',
-                fontSize: '0.875rem',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                ...(errors.city ? {} : {
-                  ':focus': {
-                    borderColor: '#6366f1',
-                    boxShadow: '0 0 0 2px rgba(99, 102, 241, 0.2)'
-                  }
-                })
+                fontSize: '0.875rem'
               }}
             />
             {errors.city && (
@@ -168,7 +156,7 @@ function AddDriver() {
           </div>
 
           <div>
-            <label style={{
+            <label htmlFor="phone" style={{
               display: 'block',
               fontSize: '0.875rem',
               fontWeight: '500',
@@ -178,6 +166,7 @@ function AddDriver() {
               Phone
             </label>
             <input
+              id="phone"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
@@ -189,14 +178,7 @@ function AddDriver() {
                 borderRadius: '0.375rem',
                 boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
                 outline: 'none',
-                fontSize: '0.875rem',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                ...(errors.phone ? {} : {
-                  ':focus': {
-                    borderColor: '#6366f1',
-                    boxShadow: '0 0 0 2px rgba(99, 102, 241, 0.2)'
-                  }
-                })
+                fontSize: '0.875rem'
               }}
             />
             {errors.phone && (
@@ -207,7 +189,7 @@ function AddDriver() {
           </div>
 
           <div>
-            <label style={{
+            <label htmlFor="vehicleType" style={{
               display: 'block',
               fontSize: '0.875rem',
               fontWeight: '500',
@@ -217,6 +199,7 @@ function AddDriver() {
               Vehicle Type
             </label>
             <input
+              id="vehicleType"
               name="vehicleType"
               value={formData.vehicleType}
               onChange={handleChange}
@@ -228,14 +211,7 @@ function AddDriver() {
                 borderRadius: '0.375rem',
                 boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
                 outline: 'none',
-                fontSize: '0.875rem',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                ...(errors.vehicleType ? {} : {
-                  ':focus': {
-                    borderColor: '#6366f1',
-                    boxShadow: '0 0 0 2px rgba(99, 102, 241, 0.2)'
-                  }
-                })
+                fontSize: '0.875rem'
               }}
             />
             {errors.vehicleType && (
@@ -246,7 +222,7 @@ function AddDriver() {
           </div>
 
           <div>
-            <label style={{
+            <label htmlFor="licenseNumber" style={{
               display: 'block',
               fontSize: '0.875rem',
               fontWeight: '500',
@@ -256,6 +232,7 @@ function AddDriver() {
               License Number
             </label>
             <input
+              id="licenseNumber"
               name="licenseNumber"
               value={formData.licenseNumber}
               onChange={handleChange}
@@ -267,14 +244,7 @@ function AddDriver() {
                 borderRadius: '0.375rem',
                 boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
                 outline: 'none',
-                fontSize: '0.875rem',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                ...(errors.licenseNumber ? {} : {
-                  ':focus': {
-                    borderColor: '#6366f1',
-                    boxShadow: '0 0 0 2px rgba(99, 102, 241, 0.2)'
-                  }
-                })
+                fontSize: '0.875rem'
               }}
             />
             {errors.licenseNumber && (
@@ -285,7 +255,7 @@ function AddDriver() {
           </div>
 
           <div>
-            <label style={{
+            <label htmlFor="assignedArea" style={{
               display: 'block',
               fontSize: '0.875rem',
               fontWeight: '500',
@@ -295,6 +265,7 @@ function AddDriver() {
               Assigned Area
             </label>
             <input
+              id="assignedArea"
               name="assignedArea"
               value={formData.assignedArea}
               onChange={handleChange}
@@ -306,14 +277,7 @@ function AddDriver() {
                 borderRadius: '0.375rem',
                 boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)',
                 outline: 'none',
-                fontSize: '0.875rem',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                ...(errors.assignedArea ? {} : {
-                  ':focus': {
-                    borderColor: '#6366f1',
-                    boxShadow: '0 0 0 2px rgba(99, 102, 241, 0.2)'
-                  }
-                })
+                fontSize: '0.875rem'
               }}
             />
             {errors.assignedArea && (
@@ -335,13 +299,7 @@ function AddDriver() {
               fontWeight: '500',
               color: '#ffffff',
               backgroundColor: '#6366f1',
-              cursor: 'pointer',
-              transition: 'background-color 0.2s',
-              ':hover': { backgroundColor: '#4f46e5' },
-              ':focus': {
-                outline: 'none',
-                boxShadow: '0 0 0 2px #ffffff, 0 0 0 4px rgba(99, 102, 241, 0.5)'
-              }
+              cursor: 'pointer'
             }}
           >
             Register Driver
@@ -389,13 +347,7 @@ function AddDriver() {
                   fontWeight: '500',
                   color: '#ffffff',
                   backgroundColor: '#6366f1',
-                  cursor: 'pointer',
-                  transition: 'background-color 0.2s',
-                  ':hover': { backgroundColor: '#4f46e5' },
-                  ':focus': {
-                    outline: 'none',
-                    boxShadow: '0 0 0 2px #ffffff, 0 0 0 4px rgba(99, 102, 241, 0.5)'
-                  }
+                  cursor: 'pointer'
                 }}
               >
                 Close
