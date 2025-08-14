@@ -97,7 +97,7 @@ function AddDriver() {
               color: '#374151',
               marginBottom: '0.25rem'
             }}>
-              Driver Name
+              Driver Name:
             </label>
             <input
               id="driverName"
@@ -130,7 +130,7 @@ function AddDriver() {
               color: '#374151',
               marginBottom: '0.25rem'
             }}>
-              City
+              City:
             </label>
             <input
               id="city"
@@ -163,7 +163,7 @@ function AddDriver() {
               color: '#374151',
               marginBottom: '0.25rem'
             }}>
-              Phone
+              Phone:
             </label>
             <input
               id="phone"
@@ -196,7 +196,7 @@ function AddDriver() {
               color: '#374151',
               marginBottom: '0.25rem'
             }}>
-              Vehicle Type
+              Vehicle Type:
             </label>
             <input
               id="vehicleType"
@@ -229,7 +229,7 @@ function AddDriver() {
               color: '#374151',
               marginBottom: '0.25rem'
             }}>
-              License Number
+              License Number:
             </label>
             <input
               id="licenseNumber"
@@ -262,7 +262,7 @@ function AddDriver() {
               color: '#374151',
               marginBottom: '0.25rem'
             }}>
-              Assigned Area
+              Assigned Area:
             </label>
             <input
               id="assignedArea"
